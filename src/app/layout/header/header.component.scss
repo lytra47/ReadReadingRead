@@ -3,8 +3,9 @@ nav {
     color: white;
   }
 
+  z-index: 1000;
   width: 100%;
-  position: fixed;
+  // position: fixed;
   backdrop-filter: blur(20px);
-  background-color: rgba(200, 223, 200, 0.3);
+  background-color: rgba(33, 32, 32, 0.568);
 }
