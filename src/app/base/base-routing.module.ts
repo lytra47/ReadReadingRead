@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'authors', component: AuthorsComponent },
   { path: 'books', component: BooksComponent },
-  { path: 'view-author/:id', component: ViewAuthorComponent },
-  { path: 'view-book/:id', component: ViewBookComponent },
+  { path: 'authors/view-author/:id', component: ViewAuthorComponent },
+  { path: 'books/view-book/:id', component: ViewBookComponent },
 ];
 
 @NgModule({
