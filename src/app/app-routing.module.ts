@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'add-author', component: AddAuthorComponent },
   { path: 'add-book', component: AddBookComponent },
-  { path: 'delete-author', component: DeleteAuthorComponent },
-  { path: 'delete-book', component: DeleteBookComponent },
+  { path: 'delete-author/:id', component: DeleteAuthorComponent },
+  { path: 'delete-book/:id', component: DeleteBookComponent },
 ];
 
 @NgModule({

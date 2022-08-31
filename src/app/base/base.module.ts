@@ -6,6 +6,8 @@ import { BaseComponent } from './base.component';
 import { HomeComponent } from './home/home.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { BooksComponent } from './books/books.component';
+import { ViewBookComponent } from './view-book/view-book.component';
+import { ViewAuthorComponent } from './view-author/view-author.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { BooksComponent } from './books/books.component';
     HomeComponent,
     AuthorsComponent,
     BooksComponent,
+    ViewBookComponent,
+    ViewAuthorComponent,
   ],
   imports: [CommonModule, BaseRoutingModule],
 })
