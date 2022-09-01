@@ -9,6 +9,7 @@ import { BasedataService } from '../basedata.service';
 export class BooksComponent implements OnInit {
   booklist: any;
   filterCategory: any;
+  searchKey: any = '';
 
   constructor(private baseService: BasedataService) {}
 
@@ -16,6 +17,10 @@ export class BooksComponent implements OnInit {
     this.baseService.viewAllbooks().subscribe((data) => {
       this.booklist = data;
       this.filterCategory = data;
+    });
+
+    this.baseService.search.subscribe((value: any) => {
+      this.searchKey = value;
     });
   }
 

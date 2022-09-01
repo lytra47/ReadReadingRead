@@ -1,6 +1,11 @@
 nav {
   a {
+    border-radius: 30px;
     color: white;
+    border: none;
+  }
+  a:hover {
+    color: black;
   }
 
   z-index: 1000;
