@@ -1,0 +1,30 @@
+.genere {
+  margin: 0;
+  // padding: 10px;
+  // gap: 20px;
+}
+.btn-outline-success {
+  width: 100px;
+  color: black;
+  border: none;
+}
+.btn-outline-success:hover {
+  background-color: #63e06f !important;
+}
+.card-top {
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.788);
+}
+a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .genere {
+    justify-content: center;
+  }
+}

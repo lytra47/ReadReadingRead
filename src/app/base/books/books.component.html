@@ -1,3 +1,54 @@
+<!-- category bar -->
+<div class="card-top container-fluid">
+  <div class="container genere d-flex justify-content-start pb-1 pt-1">
+    <!--  -->
+    <div class="item btn btn-outline-success">
+      <a (click)="filter('')">
+        <div class="linkbtn">
+          <h6>List all</h6>
+        </div>
+      </a>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="item btn btn-outline-success">
+      <a (click)="filter('a')">
+        <div class="linkbtn">
+          <h6>Adventure</h6>
+        </div>
+      </a>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="item btn btn-outline-success">
+      <a (click)="filter('h')">
+        <div class="linkbtn">
+          <h6>Horror</h6>
+        </div>
+      </a>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="item btn btn-outline-success">
+      <a (click)="filter('t')">
+        <div class="linkbtn">
+          <h6>Thriller</h6>
+        </div>
+      </a>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="item btn btn-outline-success">
+      <a (click)="filter('r')">
+        <div class="linkbtn">
+          <h6>Romance</h6>
+        </div>
+      </a>
+    </div>
+    <!--  -->
+  </div>
+</div>
+<!--  -->
 <!-- Section-->
 <section class="py-5">
   <div class="container px-4 px-lg-5 mt-5">
@@ -5,13 +56,13 @@
       class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
     >
       <!-- TILE -->
-      <div class="col mb-5" *ngFor="let books of booklist">
+      <div class="col mb-5" *ngFor="let books of filterCategory">
         <div class="card h-100">
           <!-- Product image-->
           <img
             class="card-img-top"
-            width="150px"
-            height="350px"
+            width="70px"
+            height="300px"
             src="{{ books.image }}"
             alt="..."
           />
@@ -29,7 +80,7 @@
             <div class="text-center">
               <a
                 class="btn btn-outline-dark mt-auto"
-                href="home/books/view-book/{{ books.bookid }}"
+                href="home/books/view-book/{{ books.id }}"
                 >View options</a
               >
             </div>

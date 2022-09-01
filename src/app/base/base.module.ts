@@ -8,6 +8,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { BooksComponent } from './books/books.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { ViewAuthorComponent } from './view-author/view-author.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ViewAuthorComponent } from './view-author/view-author.component';
     BooksComponent,
     ViewBookComponent,
     ViewAuthorComponent,
+    FilterPipe,
   ],
   imports: [CommonModule, BaseRoutingModule],
 })

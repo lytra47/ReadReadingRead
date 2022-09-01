@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "bookid": 1,
+      "id": 1,
       "authid": 1,
       "category": "h",
       "title": "The Institute",
@@ -11,7 +11,7 @@
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1549241208i/43798285.jpg"
     },
     {
-      "bookid": 2,
+      "id": 2,
       "authid": 1,
       "category": "h",
       "title": "Post 2",
@@ -21,7 +21,7 @@
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1353277730i/11588.jpg"
     },
     {
-      "bookid": 3,
+      "id": 3,
       "authid": 1,
       "category": "h",
       "title": "Post 3",
@@ -29,19 +29,31 @@
       "is-available": true,
       "price": 500,
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1334416842i/830502.jpg"
+    },
+    {
+      "id": 3,
+      "authid": 1,
+      "category": "t",
+      "title": "Post 3",
+      "disc": "discription goes here",
+      "is-available": true,
+      "price": 500,
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582759969i/40097951.jpg"
     }
   ],
 
   "authors": [
     {
-      "authid": 1,
-      "name": "lytra",
-      "about": "Memento Mori"
+      "id": 1,
+      "name": "Stephen King",
+      "about": "Memento Mori",
+      "image": "https://images.gr-assets.com/authors/1362814142p8/3389.jpg"
     },
     {
-      "authid": 2,
-      "name": "kraken",
-      "about": "Kraken rises."
+      "id": 2,
+      "name": "dmitry glukhovsky",
+      "about": "Kraken rises.",
+      "image": "https://images.gr-assets.com/authors/1336150682p8/3159299.jpg"
     }
   ]
 }
